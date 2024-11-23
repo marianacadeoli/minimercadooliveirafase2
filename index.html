@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimercado Oliveira</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ 
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Minimercado Oliveira</h1>
+        <nav>
+            <a href="#categorias">Categorias</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#cadastro">Cadastro</a>
+            <a href="#agendamento">Agendamento</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+
+        <!-- Carrossel de Categorias -->
+        <section id="categorias">
+            <h2>Produtos Disponíveis</h2>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="laranja.png" class="d-block" alt="Imagem de uma laranja madura" />
+                        <div class="carousel-caption">
+                            <h5>Laranja</h5>
+                            <p>R$ 4,50/kg</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="alface.png" class="d-block" alt="Imagem de um pé de alface fresco" />
+                        <div class="carousel-caption">
+                            <h5>Alface</h5>
+                            <p>R$ 3,50/unidade</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="arroz.png" class="d-block" alt="Imagem de um saco de arroz" />
+                        <div class="carousel-caption">
+                            <h5>Arroz</h5>
+                            <p>R$ 15,00/1kg</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="feijao.png" class="d-block" alt="Imagem de um saco de feijão" />
+                        <div class="carousel-caption">
+                            <h5>Feijão</h5>
+                            <p>R$ 12,00/1kg</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="bacon.png" class="d-block" alt="Imagem de bacon picado" />
+                        <div class="carousel-caption">
+                            <h5>Bacon</h5>
+                            <p>R$ 8,40/kg</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="frango.png" class="d-block" alt="Imagem de frango" />
+                        <div class="carousel-caption">
+                            <h5>Frango</h5>
+                            <p>R$ 13,50/kg</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </section>
+        
+
+        <!-- Serviços -->
+        <section id="servicos">
+            <h2>Serviços Disponíveis</h2>
+            <ul>
+                <li>Retirada no local</li>
+                <li>Tele-entrega - R$ 10,00</li>
+            </ul>
+        </section>
+
+        <!-- Formulário de Cadastro -->
+        <section id="cadastro">
+            <h2>Cadastro do Cliente</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" required>
+
+                <label for="cpf">CPF:</label>
+                <input type="number" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo">
+                    <option value="Feminino">Feminino</option>
+                    <option value="Masculino">Masculino</option>
+                </select>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Agendamento de Serviço -->
+        <section id="agendamento">
+            <h2>Agendar Serviço</h2>
+            <form>
+                <label for="opcao">Opção:</label>
+                <select id="opcao" name="opcao" required>
+                    <option value="retirada">Retirada no Local</option>
+                    <option value="tele-entrega">Tele-entrega</option>
+                </select>
+
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Minimercado Oliveira - Todos os direitos reservados</p>
+        <p>Contato: contato@minimercadooliveira.com.br</p>
+        <nav>
+            <a href="#categorias">Categorias</a> |
+            <a href="#servicos">Serviços</a> |
+            <a href="#cadastro">Cadastro</a>
+        </nav>
+    </footer>
+
+</body>
+</html>

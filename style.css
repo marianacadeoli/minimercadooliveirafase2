@@ -1,0 +1,268 @@
+.carousel img {
+    width: 400px; 
+    height: 300px; 
+    object-fit: cover; 
+    margin: 0 auto; 
+    border: none;
+}
+
+.carousel {
+    margin: 0 auto; 
+    background-color: rgb(217, 217, 217);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+/* Estilo da legenda */
+.carousel-caption {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 10; 
+    text-align: center; 
+}
+
+/* Estilo do título h5 */
+.carousel-caption h5 {
+    font-weight: bold;
+    font-size: 45px;
+    margin: 0;
+    color: #272727;
+}
+
+/* Estilo do parágrafo p */
+.carousel-caption p {
+    font-size: 20px;
+    margin: 0;
+    color: #272727;
+}
+
+
+/* Ajustes nos títulos h2 nas seções */
+#categorias h2, 
+#cadastro h2, 
+#servicos h2, 
+#agendamento h2 {
+    margin-top: 100px !important; 
+    margin-bottom: 20px !important; 
+}
+
+form {
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #73ba74;
+    border-radius: 8px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 8px; 
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="checkbox"] {
+    width: 100%; 
+    padding: 8px;
+    margin-bottom: 20px; 
+    border: none;
+    border-radius: 4px;
+}
+
+/* Estilo para o botão de envio na seção de cadastro */
+#cadastro button {
+    padding: 10px 20px; 
+    background-color: #17ae3a; 
+    color: white; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: color 0.3s ease; 
+}
+
+#cadastro button:hover {
+    background-color: #0a2a12; 
+}
+
+/* Estilo para o botão de envio na seção de cadastro */
+#agendamento button {
+    padding: 10px 20px; 
+    background-color: #17ae3a; 
+    color: white; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+}
+
+#agendamento button:hover {
+    background-color: #0a2a12; 
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+header {
+    background-color: #73ba74; 
+    color: white; 
+    text-align: center; 
+    padding: 1rem;
+}
+
+header a {
+    color: inherit;
+    text-decoration: none; 
+}
+
+header nav {
+    display: flex; 
+    gap: 50px;
+    justify-content: center; 
+}
+
+header a {
+    text-decoration: none; 
+    color: inherit; 
+    font-size: 20px; 
+}
+
+header a:hover {
+    color: #272727; 
+    text-decoration: none; 
+}
+
+header h1 {
+    margin-top: 20px;
+    text-align: center; 
+    margin-bottom: 80px; 
+    font-size: 50px; 
+    color: #ffffff; 
+}
+
+header nav {
+    display: flex; 
+    gap: 80px; 
+    justify-content: center; 
+    margin-top: 10px; 
+}
+
+section#categorias {
+    padding-top: 20px; 
+    padding-left: 15px; 
+    padding-right: 15px; 
+}
+
+section#categorias h2 {
+    text-align: center; 
+    font-size: 40px; 
+    color: #272727; 
+}
+
+section#servicos {
+    padding-left: 40px; 
+}
+
+section#cadastro {
+    padding-left: 40px; 
+}
+
+section#agendamento {
+    padding-left: 40px; 
+}
+
+#formulario {
+    max-width: 400px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+form label {
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+    color: #3D3D3D; 
+}
+
+/* Estilo dos campos de entrada */
+form input,
+form select {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 14px; 
+}
+
+/* Estilo do botão */
+form button {
+    width: 100%; 
+    padding: 10px; 
+    color: #ffffff; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center; 
+    background-color: #3D3D3D; 
+    color: #FFFFFF; 
+    padding: 20px; 
+}
+
+footer p {
+    margin: 5px 10px; 
+}
+
+footer nav {
+    display: inline-block; 
+    margin-top: 10px;
+}
+
+footer nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#agendamento {
+    margin-bottom: 50px; 
+    padding-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #272727;
+    color: #FFFFFF;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer nav a {
+    color: #ffffff; 
+    text-decoration: none;
+    margin: 0 10px; 
+}
+
+footer nav a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #ffffff; /* Define a cor padrão dos links */
+    transition: color 0.3s ease; /* Suaviza a transição ao passar o mouse */
+}
+
+footer nav a:hover {
+    color: #73ba74; /* Cor desejada ao passar o mouse */
+}
